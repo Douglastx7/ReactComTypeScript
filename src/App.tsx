@@ -1,19 +1,12 @@
 import React from "react";
-import Button from "./Button";
+import AppAula1 from './components/AppsAulas/AppAula1';
+import AppAula2 from "./components/AppsAulas/AppAula2";
 
 function App() {
-
-  const [ total, setTotal] = React.useState(0);
-
- function incrementar() {
-   setTotal((total) => total + 1);
- }
-
   return (
       <div>
-        <p>Total: {total}</p>
-       <Button onClick={incrementar} tamanho="1.5rem">Incrementar 2</Button>
-   
+          {/* <AppAula1/> */}
+          <AppAula2/>
       </div>
   )
 }
