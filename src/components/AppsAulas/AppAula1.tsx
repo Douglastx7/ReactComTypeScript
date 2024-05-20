@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button';
+import Button from '../componentsAula1/Button';
 
 const AppAula1 = () => {
   const [ total, setTotal] = React.useState(0);

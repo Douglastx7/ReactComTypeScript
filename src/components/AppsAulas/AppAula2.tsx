@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../Input';
+import Input from '../componentsAula2/Input';
 
 const AppAula2 = () => {
   const [data, setData] = React.useState("");
