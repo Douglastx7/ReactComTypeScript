@@ -6,6 +6,7 @@ import AppAula4 from "./components/AppsAulas/AppAula4";
 import AppAula0301 from "./components/AppsAulas/AppAula0301";
 import AppAula0303 from "./components/AppsAulas/AppAula0303";
 import AppAula0304 from "./components/AppsAulas/AppAula0304";
+import AppAula0305 from "./components/AppsAulas/AppAula0305";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           {/* <AppAula4/> */}
           {/* <AppAula0301/> */}
           {/* <AppAula0303/> */}
-          <AppAula0304/>
+          {/* <AppAula0304/> */}
+          <AppAula0305/>
       </div>
   )
 }
