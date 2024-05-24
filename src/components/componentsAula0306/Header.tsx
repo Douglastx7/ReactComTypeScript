@@ -1,9 +1,10 @@
 import React from 'react'
-import { useUi } from './contexts/UiContext';
+import { useUser } from './contexts/UserContext';
 
 const Header = () => {
-    const {setDark} = useUi();
-    return <button onClick={() => setDark((b) => !b)}>Modo</button>;
+    const {data} = useUser();
+    if(!data) return null;
+    return (<div>{data.nome}</div>)
 }
 
 export default Header;

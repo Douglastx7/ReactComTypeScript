@@ -1,14 +1,16 @@
 import React from 'react'
-import { UiContextProvider } from '../componentsAula0306/contexts/UiContext';
 import Header from '../componentsAula0306/Header';
 import Content from '../componentsAula0306/Content';
+import { UserContextProvider } from '../componentsAula0306/contexts/UserContext';
 
 const AppAula0306 = () => {
   return (
-        <UiContextProvider>
-          <Header/>
-          <Content/>
-        </UiContextProvider>
+        <div>
+          <UserContextProvider>
+            <Header/>
+            <Content/>
+          </UserContextProvider>
+        </div>
   )
 }
 

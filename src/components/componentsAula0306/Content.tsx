@@ -1,17 +1,17 @@
 
-import { useUi } from "./contexts/UiContext";
+import React from "react";
+import { useUser } from "./contexts/UserContext";
 
 const Content = () => {
-  const { dark } = useUi();
+
+  const {data} = useUser();
+  if(!data) return null;
   return (
-    <div
-      style={{
-        height: '400px',
-        color: dark ? '#fff' : '#222',
-        backgroundColor: dark ? '#222' : '#fff',
-      }}
-    >
-      Esse é um teste do modo.
+    <div>
+      <h3>Preferências:</h3>
+      <p>Qualidade: {data.preferencias.qualidade}</p>
+      <p>Playback: {data.preferencias.playback}</p>
+      <p>Volume: {data.preferencias.volume}</p>
     </div>
   );
 };
